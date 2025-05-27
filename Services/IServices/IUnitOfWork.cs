@@ -5,10 +5,7 @@ namespace WebService.API.Services.Contracts
 {
    public interface IUnitOfWork : IDisposable
     {
-        ITodoRepository Todo
-        {
-            get;
-        }
+    
         IPersonRepository Person
         {
             get;

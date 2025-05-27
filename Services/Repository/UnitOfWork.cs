@@ -11,8 +11,7 @@ namespace WebService.API.Services.Repository
         private WebAPIDb context;
         public UnitOfWork(WebAPIDb context)
         {
-            this.context = context;
-            Todo = new TodoRepository(this.context);
+           
 
             this.context = context;
             Person = new PersonRepository(this.context);
@@ -21,11 +20,7 @@ namespace WebService.API.Services.Repository
             Allocation = new AllocationRepository(this.context);
             
         }
-        public ITodoRepository Todo
-        {
-            get;
-            private set;
-        }
+      
         public IPersonRepository Person
         {
             get;
